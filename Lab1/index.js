@@ -8,6 +8,6 @@ function formatFullName(nameString) {
     console.log(capFirstLetterofFirst);
     console.log(capFirstLetterofLast);
     console.log(capFirstLetterofLast + ", " + stringArray[0])
-}
+} // comment
 
 formatFullName(fullName);
