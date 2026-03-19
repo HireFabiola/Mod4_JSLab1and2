@@ -16,7 +16,6 @@ function formatFullName(nameString) {
     // if ((stringArray[0] == "") || (stringArray[1] == ""))
     console.log('Invalid name input');
 }
-
 }
 
 function hasMoreThanOneWord(inputString) {
