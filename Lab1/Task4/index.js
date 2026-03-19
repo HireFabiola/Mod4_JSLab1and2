@@ -5,7 +5,7 @@ function calculateTotalCost(price, quantity, taxRate,  discount = 0) {
         (typeof taxRate === "number" && !Number.isNaN(taxRate)) &&
         (typeof discount === "number" && !Number.isNaN(discount)))
         {
-        let totalCost = ((price * quantity)-(price * discount)) * (1 + taxRate)
+        let totalCost = ((price * quantity)-((price * quantity) * discount)) * (1 + taxRate)
         console.log(totalCost.toFixed(2));
     }
     else {
@@ -13,4 +13,4 @@ function calculateTotalCost(price, quantity, taxRate,  discount = 0) {
     }
 }
 
-calculateTotalCost(2.5,1,.10,.10)
+calculateTotalCost(2.5,2,.10,.10)
